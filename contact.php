@@ -1,0 +1,1 @@
+{"info":"error","msg":"Please enter your name.","id":"#name"}
