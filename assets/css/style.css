@@ -13264,7 +13264,7 @@ header[class*=bg][class*=white][class*=moove] {
 
 header nav.main-navigation,
 header nav.top-navigation {
-    height: 30px;  /* header 높이 kihoon */
+    height: 40px;  /* header 높이 kihoon */
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
@@ -13324,25 +13324,30 @@ header nav.top-navigation #logo a.navbar-brand img {
 
 header nav.main-navigation #logo[class*=height-lg] a.navbar-brand img,
 header nav.top-navigation #logo[class*=height-lg] a.navbar-brand img {
-    max-height: 28px /*  kihoon 로고 크기 조정*/
+    max-height: 28px; /*  kihoon 로고 크기 조정*/
+    padding-left: 64px; /* kihoon 화면 크기 작아졌을때 메뉴바 오른쪽에 붙게*/
+
 }
 
 @media screen and (max-width:576px) {
     header nav.main-navigation #logo[class*=height-lg] a.navbar-brand img,
     header nav.top-navigation #logo[class*=height-lg] a.navbar-brand img {
-        max-height: 40px
+        max-height: 23px; /* kihoon 화면 크기 작아졌을대*/
+        padding-left: 0px; /* kihoon 화면 크기 작아졌을때 메뉴바 오른쪽에 붙게*/
+
     }
 }
 
 header nav.main-navigation #logo[class*=height-md] a.navbar-brand img,
 header nav.top-navigation #logo[class*=height-md] a.navbar-brand img {
-    max-height: 40px
+    max-height: 28px
 }
 
 @media screen and (max-width:576px) {
     header nav.main-navigation #logo[class*=height-md] a.navbar-brand img,
     header nav.top-navigation #logo[class*=height-md] a.navbar-brand img {
-        max-height: 35px
+        max-height: 25px;
+
     }
 }
 
@@ -13621,6 +13626,7 @@ header nav.top-navigation #top-menu [class|=cta] {
         line-height: 30px
     }
 }
+ 
 
 header nav.main-navigation #main-menu [class|=cta]+[class|=menu-button],
 header nav.main-navigation #top-menu [class|=cta]+[class|=menu-button],
@@ -14455,8 +14461,12 @@ header nav.top-navigation #mobile-menu[class*=side][aria-expanded=true] {
     header nav.top-navigation #mobile-menu[class*=side][aria-expanded=true] {
         -webkit-transform: translate3d(300px, 0, 0);
         transform: translate3d(300px, 0, 0)
+ 
     }
 }
+
+ 
+  
 
 header nav.main-navigation #mobile-menu[class*=side][class*=right] [class*=mobile-submenu],
 header nav.main-navigation #mobile-menu[class*=side][class*=right] [class|=mobile-wrap],
@@ -27789,6 +27799,21 @@ body.visible {
 [class|=page-content] .container .row [class*=testimonials-carousel] [class|=icon-element] {
     margin: 50px 0
 }
+
+
+     /* 576px 이하일 때 padding 값을 0px으로 설정 kihoon */
+ 
+
+    @media (max-width: 576px) {
+
+      .headerx {
+      padding-left: 0;
+      padding-right: 0;
+      
+
+      }
+    }
+  
 
 footer [class*=down][class*=col][class*=border]:after {
     background-color: #CDCDCD
