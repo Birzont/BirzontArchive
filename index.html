@@ -122,7 +122,9 @@
     <div id="main-wrap">
         <!--  Header & Menu  -->
         <!--  class: fixed, bg, white, transparent  -->
-        <header id="header">
+
+        <!--  id: header 로 바꾸면 스크롤했을때 사라짐  -->
+        <header id="headernone" class="fixed-bg-white">
             <!--  padding-sm, padding-md, padding-lg  -->
             <div class="wrap-header--padding-md">
                 <nav class="main-navigation">
@@ -1029,6 +1031,25 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-164617531-1');
+
+
+
+
+          // 스크롤 이벤트를 감지하여 네비게이션 바를 숨기고 보이게 만듭니다.
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    var navbar = document.getElementById("header");
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
+
     </script>
 </body>
 

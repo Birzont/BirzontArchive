@@ -13257,9 +13257,14 @@ header[class*=bg][class*=white][class*=moove] {
     transition: .4s ease
 }
 
+
+
+
+
+
 header nav.main-navigation,
 header nav.top-navigation {
-    height: 60px;
+    height: 30px;  /* header 높이 kihoon */
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
@@ -13275,6 +13280,13 @@ header nav.top-navigation {
     -o-transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) height;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) height
 }
+
+
+
+
+
+
+
 
 header nav.main-navigation #logo,
 header nav.top-navigation #logo {
@@ -13312,7 +13324,7 @@ header nav.top-navigation #logo a.navbar-brand img {
 
 header nav.main-navigation #logo[class*=height-lg] a.navbar-brand img,
 header nav.top-navigation #logo[class*=height-lg] a.navbar-brand img {
-    max-height: 50px
+    max-height: 32px /*  kihoon 로고 크기 조정*/
 }
 
 @media screen and (max-width:576px) {
