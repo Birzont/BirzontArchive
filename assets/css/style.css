@@ -13324,7 +13324,7 @@ header nav.top-navigation #logo a.navbar-brand img {
 
 header nav.main-navigation #logo[class*=height-lg] a.navbar-brand img,
 header nav.top-navigation #logo[class*=height-lg] a.navbar-brand img {
-    max-height: 32px /*  kihoon 로고 크기 조정*/
+    max-height: 28px /*  kihoon 로고 크기 조정*/
 }
 
 @media screen and (max-width:576px) {
