@@ -13325,7 +13325,7 @@ header nav.top-navigation #logo a.navbar-brand img {
 header nav.main-navigation #logo[class*=height-lg] a.navbar-brand img,
 header nav.top-navigation #logo[class*=height-lg] a.navbar-brand img {
     max-height: 28px; /*  kihoon 로고 크기 조정*/
-    padding-left: 64px; /* kihoon 화면 크기 작아졌을때 메뉴바 오른쪽에 붙게*/
+    padding-left: 64px; /* kihoon 화면 크기 작아졌을때 메뉴바 사알짝만 오른쪽에 붙게*/
 
 }
 
@@ -13624,6 +13624,7 @@ header nav.top-navigation #top-menu [class|=cta] {
         height: 35px;
         padding: 0 1rem;
         line-height: 30px
+        
     }
 }
  
@@ -14255,7 +14256,8 @@ header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][
     header nav.top-navigation #mobile-menu [class*=mobile-submenu] [class*=main-links][class*=items-lg] ul li span,
     header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][class*=items-lg] ul li a,
     header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][class*=items-lg] ul li span {
-        font-size: 2rem
+        font-size: 2rem;
+        
     }
 }
 
@@ -14279,7 +14281,7 @@ header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][
     header nav.top-navigation #mobile-menu [class*=mobile-submenu] [class*=main-links][class*=items-md] ul li span,
     header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][class*=items-md] ul li a,
     header nav.top-navigation #mobile-menu [class|=mobile-wrap] [class*=main-links][class*=items-md] ul li span {
-        font-size: 1.5rem
+        font-size: 1.5rem;
     }
 }
 
@@ -14367,7 +14369,9 @@ header nav.top-navigation #mobile-menu [class*=mobile-submenu] #backSubmenu {
 @media (max-width:767px) {
     header nav.main-navigation #mobile-menu [class*=mobile-submenu] #backSubmenu,
     header nav.top-navigation #mobile-menu [class*=mobile-submenu] #backSubmenu {
-        left: 25px
+        left: 25px;
+
+        
     }
 }
 
@@ -14419,7 +14423,10 @@ header nav.top-navigation #mobile-menu[class*=side] [class|=mobile-wrap] {
     header nav.top-navigation #mobile-menu[class*=side] [class*=mobile-submenu],
     header nav.top-navigation #mobile-menu[class*=side] [class|=mobile-wrap] {
         width: 400px;
-        left: -400px
+        left: -400px;
+
+        
+
     }
 }
 
@@ -14453,6 +14460,7 @@ header nav.top-navigation #mobile-menu[class*=side][aria-expanded=true] {
     header nav.top-navigation #mobile-menu[class*=side][aria-expanded=true] {
         -webkit-transform: translate3d(400px, 0, 0);
         transform: translate3d(400px, 0, 0)
+        
     }
 }
 
@@ -14476,6 +14484,7 @@ header nav.top-navigation #mobile-menu[class*=side][class*=right] [class|=mobile
     right: -500px;
     padding-right: 3vw;
     padding-left: 4vw
+    
 }
 
 @media (max-width:991px) {
@@ -14486,6 +14495,8 @@ header nav.top-navigation #mobile-menu[class*=side][class*=right] [class|=mobile
         left: initial;
         right: -400px;
         padding-left: 7vw
+        
+        
     }
 }
 
@@ -14497,6 +14508,7 @@ header nav.top-navigation #mobile-menu[class*=side][class*=right] [class|=mobile
         width: 300px;
         left: initial;
         right: -300px
+        
     }
 }
 
