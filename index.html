@@ -292,11 +292,38 @@
         <!--  END Header & Menu  -->
 
         <!--  Page Header  -->
-        <!--  class: image, round, hfixedlg, hfixedmd, hfixedsm  -->
-        <div class="page-header--image" data-padding data-overlay>
-             </br></br></br>
 
-            <div class="imagebgs backimg backimgx">
+
+        <style>
+
+            /* 여기에 추가적인 스타일을 정의하세요 */
+
+.page-header--images {
+    height: 100vh; /* 화면 높이의 100%로 설정하여 화면을 가득 채웁니다. */
+    overflow: hidden; /* 오버플로우를 숨기고 내용을 잘라냅니다. */
+    position: relative; /* 포지션을 상대적으로 설정합니다. */
+}
+
+.imagebg {
+    width: 100%; /* 이미지를 화면 너비로 설정합니다. */
+    height: 100%; /* 이미지를 화면 높이로 설정합니다. */
+    position: absolute; /* 포지션을 상대적으로 설정합니다. */
+    top: 0;
+    left: 0;
+}
+
+.imagebg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지를 화면에 맞게 조절합니다. */
+}
+
+
+
+        </style>
+        <!--  class: image, round, hfixedlg, hfixedmd, hfixedsm  -->
+        <div class="page-header--images backimg backimgx" data-padding data-overlay>
+            <div class="imagebg">
                 <img src="assets/img/BirzontBG.jpeg" data-src="assets/img/BirzontBG.jpeg" data-src-retina="assets/img/BirzontBG.jpeg" alt="">
             </div>
             <div class="container">
@@ -304,16 +331,18 @@
                     <div data-aos="fade-up" class="col-12 col-lg-6 col-xl-5">
                         <div class="sectiontitle-element--light">
                             <h1 class="big" style="line-height: 1.2;">Innovation,</br> Earthkind.</h1>
-                            <p><strong style="color: azure;">BirdAI is powered by humanity, for better world.</strong></p>
+                            <p><strong style="color: azure;">BirdAI is powered by humanity, for a better world.</strong></p>
                             <a href="#" class="btn--big--round--border--light">Birzont</a>
                         </div>
                     </div>
                 </div> 
              </div>
-            </br></br></br></br>
-
-
         </div>
+
+
+
+
+
         <!--  END Page Header  -->
         <!--  Page Content  -->
         <div class="page-content">
