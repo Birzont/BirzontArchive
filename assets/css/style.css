@@ -26980,7 +26980,7 @@ screen and (-ms-high-contrast:active) {
     transform: translate(-50%, -50%)
 }
 
-@media screen and (max-width:1090px) {
+@media screen and (max-width:1990px) {
     [class|=page-header] [class*=imagebg] img {
         height: 100%;
         width: auto
