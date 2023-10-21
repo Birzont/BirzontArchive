@@ -150,7 +150,7 @@
         <!--  class: fixed, bg, white, transparent  -->
 
         <!--  id: header 로 바꾸면 스크롤했을때 사라짐  -->
-        <header id="headernone" class="fixed-bg-white headerx" style="border-bottom: 1.1px solid rgb(228, 228, 228);">
+        <header id="headernone"  class="fixed-bg-white headerx" style="border-bottom: 1.1px solid rgb(228, 228, 228);">
             <!--  padding-sm, padding-md, padding-lg  -->
             <div class="wrap-header--padding-md">
                 <nav class="main-navigation">
@@ -217,13 +217,13 @@
                                     <div class="dropdown-inner">
                                         <ul>
                                             <li><a href="index.html">버더피플</a></li>
-                                            <li><a href="index.html">채용</a></li>
+                                            <li><a href="https://www.linkedin.com/hiring/jobs/3736807759/detail/?trk=talent_jobPost_optimize">채용</a></li>
 
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="portfolio.html">BiAI LAB</a>
+                                    <a href="#.html">BiAI LAB</a>
                                 </li>
     
                                 
@@ -297,7 +297,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="portfolio.html">BiAI</a>
+                                        <a href="#.html">BiAI</a>
                                     </li>
                  
                                     
@@ -340,17 +340,69 @@
 
 
 
+ 
+
+.video-container {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* 이미지 숨기기 */
+#background-video img {
+    display: none;
+}
+
+/* 비디오가 지원되는 경우 이미지 숨김 해제 */
+video#background-video + img {
+    display: block;
+}
+
+
+
+
+
+
         </style>
         <!--  class: image, round, hfixedlg, hfixedmd, hfixedsm  -->
         <div class="page-header--images backimg backimgx" data-padding data-overlay>
             <div class="imagebg">
-                <img src="assets/img/BirzontBG.jpeg" data-src="assets/img/BirzontBG.jpeg" data-src-retina="assets/img/BirzontBG.jpeg" alt="">
+                
+                
+                <!--<img src="assets/img/terrain.gif" data-src="assets/img/BirzontBG.jpeg" data-src-retina="assets/img/BirzontBG.jpeg" alt="">
+                -->
+
+
+                <div class="video-container">
+                    <video autoplay loop muted id="background-video">
+                        <source src="assets/img/spaceiss.mp4" type="video/mp4">
+                        <img src="assets/img/terrain.gif" data-src="assets/img/BirzontBG.jpeg" data-src-retina="assets/img/BirzontBG.jpeg" alt="Fallback Image">
+                    </video>
+                </div>
+                
+
+
+
             </div>
              <div class="container">
                 <div class="row text-center justify-content-center">
                     <div data-aos="fade-up" class="col-12 col-lg-12">
                         <div class="sectiontitle-element--light">
-                            <h1 class="big">Innovation makes world better</h1>
+
+
+                            <!--<img src="assets/img/earthW.jpeg" style="height: 90px;">-->
+
+                            <h1 class="big">We are Birders who placing seeds</h1>
                             <p>BirdAI for humanity, for a better world.</p>
                             <a href="#html" class="btn--big--round--colorthree">Birzont</a>
 
@@ -361,6 +413,28 @@
             </div>
 
         </div>
+
+        <script>
+            function resizeVideo() {
+    const video = document.getElementById('background-video');
+    const videoContainer = document.querySelector('.video-container');
+
+    const videoRatio = video.videoWidth / video.videoHeight;
+    const containerRatio = videoContainer.clientWidth / videoContainer.clientHeight;
+
+    if (containerRatio > videoRatio) {
+        video.style.width = '100%';
+        video.style.height = 'auto';
+    } else {
+        video.style.width = 'auto';
+        video.style.height = '100%';
+    }
+}
+
+window.addEventListener('resize', resizeVideo);
+window.addEventListener('load', resizeVideo);
+
+        </script>
 
 
 
@@ -466,7 +540,7 @@
                                         <div class="sectiontitle-element--inline align-items-md-end">
                                             <div class="wrapper">
                                                 <span class="toptitle">Birzont News</span>
-                                                <h2 style="word-break: keep-all;">버전트의 프로젝트와 기술을 소개합니다</h2>
+                                                <h2 style="word-break: keep-all;">버전트의 프로젝트와 기술들</h2>
                                             </div>
                                             <!--  Portfolio Nav  -->
                                             <div class="wrapper portfolio-wrap">
@@ -478,7 +552,7 @@
                                                         <div class="nav--next">
                                                             <i class="feather icon-arrow-right"></i>
                                                         </div>
-                                                        <a href="portfolio.html" class="btn--big--round">모두 보기</a>
+                                                        <a href="#.html" class="btn--big--round">모두 보기</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -490,33 +564,18 @@
                                     <div class="col-12">
                                         <div class="portfolio-carousel owl-carousel">
             
-                                            <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
-                                                <div class="info">
-                                                    <div class="image">
-                                                        <img class="owl-lazy" src="#" data-src="assets/img/mBackgroundN.jpeg" data-src-retina="assets/img/mBackgroundN.jpeg" alt="">
-                                                        <div class="icon--secondary">
-                                                            <a style="color: aliceblue; font-size: 30px;" >BiRZONode</a>
-                                                            </br>
-                                                            <a style="color: aliceblue; font-size: 15px;" >Node as Javascript</a> 
-                                                        </div>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6 style="padding-left: 15px;padding-right: 15px;">BiRZONode</h6>
-                                                        <p style="padding-left: 15px;padding-right: 15px;">Node as Javascript</p>
-                                                    </div>
-                                                </div>
-                                                <a href="#.html" class="link"></a>
-                                                </br>
-                                            </div>
+ 
 
                                             <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
                                                 <div class="info">
                                                     <div class="image">
-                                                        <img class="owl-lazy" src="#" data-src="assets/img/BackgroundW.jpeg" data-src-retina="assets/img/BackgroundW.jpeg" alt="">
+                                                        <img class="owl-lazy" src="https://samuelgalaxys.github.io/PineBeX/Main/html/Pinebe.html" data-src="assets/img/bpinebe.jpeg" data-src-retina="assets/img/bpinebe.jpeg" alt="">
                                                         <div class="icon--secondary">
                                                             <a style="color: aliceblue; font-size: 30px;" >Pinebe</a>
                                                             </br>
                                                             <a style="color: aliceblue; font-size: 15px;" >Hangul AI</a> 
+
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="text">
@@ -524,42 +583,24 @@
                                                         <p style="padding-left: 15px;padding-right: 15px;">번역된 말투를 자연스럽게</p>
                                                     </div>
                                                 </div>
-                                                <a href="http://koreagpt.cloud" class="link"></a>
+                                                <a href="https://samuelgalaxys.github.io/PineBeX/Main/html/Pinebe.html" class="link"></a>
                                                 </br>
                                             </div>
+ 
 
                                             <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
                                                 <div class="info">
                                                     <div class="image">
-                                                        <img class="owl-lazy" src="#" data-src="assets/img/mBackgroundW.jpeg" data-src-retina="assets/img/mBackgroundW.jpeg" alt="">
+                                                        <img class="owl-lazy" src="#" data-src="assets/img/bbloxer.jpeg" data-src-retina="assets/img/bbloxer.jpeg" alt="">
                                                         <div class="icon--secondary">
-                                                            <a style="color: aliceblue; font-size: 30px;" >naamuib</a>
-                                                            </br>
-                                                            <a style="color: aliceblue; font-size: 15px;" >AImountainMAPPING</a> 
-                                                        </div>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6 style="padding-left: 15px;padding-right: 15px;">naamuib</h6>
-                                                        <p style="padding-left: 15px;padding-right: 15px;">AI를 통한 농지 분석</p>
-                                                    </div>
-                                                </div>
-                                                <a href="#.html" class="link"></a>
-                                                </br>
-                                            </div>
-
-                                            <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
-                                                <div class="info">
-                                                    <div class="image">
-                                                        <img class="owl-lazy" src="#" data-src="assets/img/BirzontBG.jpeg" data-src-retina="assets/img/BirzontBG.jpeg" alt="">
-                                                        <div class="icon--secondary">
-                                                            <a style="color: aliceblue; font-size: 30px;" >Marstime</a>
+                                                            <a style="color: aliceblue; font-size: 30px;" >Bloxer</a>
                                                             </br>
                                                             <a style="color: aliceblue; font-size: 15px;" >Live mars time by Persevarance</a> 
                                                         </div>
                                                     </div>
                                                     <div class="text">
-                                                        <h6 style="padding-left: 15px;padding-right: 15px;">Marstime</h6>
-                                                        <p style="padding-left: 15px;padding-right: 15px;">실시간 화성 시계</p>
+                                                        <h6 style="padding-left: 15px;padding-right: 15px;">Bloxer</h6>
+                                                        <p style="padding-left: 15px;padding-right: 15px;">ML기반 재고관리 앱</p>
                                                     </div>
                                                 </div>
                                                 <a href="http://marstime.ai" class="link"></a>
@@ -569,16 +610,16 @@
                                             <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
                                                 <div class="info">
                                                     <div class="image">
-                                                        <img class="owl-lazy" src="#" data-src="https://i.ytimg.com/vi/djPMVhQteAA/maxresdefault.jpg" data-src-retina="https://i.ytimg.com/vi/djPMVhQteAA/maxresdefault.jpg" alt="">
+                                                        <img class="owl-lazy" src="#" data-src="assets/img/bmhazone.jpeg" data-src-retina="assets/img/bmhazone.jpeg" alt="">
                                                         <div class="icon--secondary">
-                                                            <a style="color: aliceblue; font-size: 30px;" >mhaZONE</a>
+                                                            <a style="color: aliceblue; font-size: 30px;" >Mhazone</a>
                                                             </br>
                                                             <a style="color: aliceblue; font-size: 15px;" >Manila Hankuk Academy</a> 
                                                         </div>
                                                     </div>
                                                     <div class="text">
-                                                        <h6 style="padding-left: 15px;padding-right: 15px;">mhaZONE</h6>
-                                                        <p style="padding-left: 15px;padding-right: 15px;">고등학생을 위한 AI시간표</p>
+                                                        <h6 style="padding-left: 15px;padding-right: 15px;">Mhazone</h6>
+                                                        <p style="padding-left: 15px;padding-right: 15px;">고2, 고3을 위한 시간표</p>
                                                     </div>
                                                 </div>
                                                 <a href="https://www.youtube.com/watch?v=djPMVhQteAA" class="link"></a>
@@ -586,6 +627,24 @@
                                             </div>
             
             
+                                            <div class="square-element--project" style="background-color: rgb(236, 236, 236);border-radius: 24px;">
+                                                <div class="info">
+                                                    <div class="image">
+                                                        <img class="owl-lazy" src="#" data-src="assets/img/mBackgroundN.jpeg" data-src-retina="assets/img/mBackgroundN.jpeg" alt="">
+                                                        <div class="icon--secondary">
+                                                            <a style="color: aliceblue; font-size: 30px;" >BiAI</a>
+                                                            </br>
+                                                            <a style="color: aliceblue; font-size: 15px;" >Node as Javascript</a> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h6 style="padding-left: 15px;padding-right: 15px;">BiAI</h6>
+                                                        <p style="padding-left: 15px;padding-right: 15px;">Birzont가 선보이는 새로운 경험</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#.html" class="link"></a>
+                                                </br>
+                                            </div>
             
                                         </div>
                                     </div>
@@ -929,7 +988,7 @@
                                     <h2 style="word-break: keep-all;">버전트 팀의 소식을 만나보세요</h2>
                                 </div>
                                 <div class="wrapper">
-                                    <a href="blog.html" class="btn--big--round">팀블로그</a>
+                                    <a href="https://khu-code.tistory.com" class="btn--big--round">팀블로그</a>
                                 </div>
                             </div>
                         </div>
@@ -948,13 +1007,13 @@
                                     </div>
                                     <div class="text">
                                         </br>
-                                        <h3 style="padding-left: 15px; padding-right: 15px;">Electron으로 데스크탑 앱 개발 시작하기</h3>
-                                        <p  style="padding-left: 15px; padding-right: 15px;">Electron을 이용하여 데스크탑앱을 개발하는 시작단계를 소개합니다.…</p>
-                                        <a  style="padding-left: 15px; padding-right: 15px;" href="post.html" class="simple--underline">Read all</a>
+                                        <h3 style="padding-left: 15px; padding-right: 15px;">버전트, 미국호비재단장상 및 경기도장상 수상</h3>
+                                        <p  style="padding-left: 15px; padding-right: 15px;">버전트는 미국호비재단이 주최하는 "환경을 위한 공학 아이디어 공모전"에서 2위로 입상했습니다.</p>
+                                        <a  style="padding-left: 15px; padding-right: 15px;" href="#.html" class="simple--underline">Read all</a>
                                     </div>
                                     </br>
                                 </div>
-                                <a href="post.html" class="link"></a>
+                                <a href="#.html" class="link"></a>
                                 </br>
                             </article>
                         </div>
@@ -971,13 +1030,13 @@
                                 </div>
                                 <div class="text">
                                     </br>
-                                    <h3 style="padding-left: 15px; padding-right: 15px;">특정 단어 또는 욕설 필터링하기</h3>
-                                    <p  style="padding-left: 15px; padding-right: 15px;"> 웹 사이트나 애플리케이션에서 사용자 입력의 안전성을 위한 욕설 필터링에 대해 알아봅니다</p>
-                                    <a  style="padding-left: 15px; padding-right: 15px;" href="post.html" class="simple--underline">Read all</a>
+                                    <h3 style="padding-left: 15px; padding-right: 15px;">BiAI가 특정 단어와 말투를 감지하고 필터링하는 과정</h3>
+                                    <p  style="padding-left: 15px; padding-right: 15px;"> BiAI가 작동하는 방식, 언어 감지와 콘텐츠 제어를 통한 디지털 환경의 안전성 강화에 대해 알아봅니다.</p>
+                                    <a  style="padding-left: 15px; padding-right: 15px;" href="#.html" class="simple--underline">Read all</a>
                                 </div>
                                 </br>
                             </div>
-                            <a href="post.html" class="link"></a>
+                            <a href="#.html" class="link"></a>
                             </br>
                         </article>
                         </div>
@@ -994,13 +1053,13 @@
                             </div>
                             <div class="text">
                                 </br>
-                                <h3 style="padding-left: 15px; padding-right: 15px;">버전트, 경희대학교 경영대학 입주 시작</h3>
-                                <p  style="padding-left: 15px; padding-right: 15px;">빅데이터응용학과의 보금자리에 위치한 버전트의 공간을 소개합니다</p>
-                                <a  style="padding-left: 15px; padding-right: 15px;" href="post.html" class="simple--underline">Read all</a>
+                                <h3 style="padding-left: 15px; padding-right: 15px;">버전트, GPT의 부자연스러운 한국어 잡는 파인비AI 출시</h3>
+                                <p  style="padding-left: 15px; padding-right: 15px;">버전트는 2023년 10월 9일, BiAI를 기반으로 하는 한국어 문장 수정AI 파인비를 출시했습니다.</p>
+                                <a  style="padding-left: 15px; padding-right: 15px;" href="#.html" class="simple--underline">Read all</a>
                             </div>
                             </br>
                         </div>
-                        <a href="post.html" class="link"></a>
+                        <a href="#.html" class="link"></a>
                         </br>
                         </article>
                         </div>
@@ -1019,7 +1078,7 @@
                                 <div class="text">
                                     <h2 class="textsizexxhire" style="word-break: keep-all;">합류할 곳은 찾고 있나요?</h2>
                                     <p style="word-break: keep-all;">혁신과 아이디어를 실현하세요. </br>우리는 인재 여러분들을 기다리고 있습니다.</p>
-                                    <a href="https://birzont.career.greetinghr.com/o/88501" class="btn--big--border--light--round" target="_blank">Contact Now</a>
+                                    <a href="https://www.linkedin.com/hiring/jobs/3736807759/detail/?trk=talent_jobPost_optimize" class="btn--big--border--light--round" target="_blank">Contact Now</a>
                                 </div>
                             </div>
                         </div>
