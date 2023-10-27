@@ -23,7 +23,9 @@
     <link rel="icon" href="assets/img/favicon-48.png" sizes="48x48" type="image/png" />
     <link rel="icon" href="assets/img/favicon-62.png" sizes="62x62" type="image/png" />
     <link rel="icon" href="assets/img/favicon-96.png" sizes="96x96" type="image/png" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;900&family=Orbit&display=swap" rel="stylesheet">
     <!-- Canonical -->
     <link rel="canonical" href="/" />
 
@@ -173,7 +175,7 @@
                                 <!--  class: shadow, round, icon, bgitems  -->
                                 <li class="dropdown-parent--shadow--round--bgitems">
                                     <!--  class: active  -->
-                                    <a href="javascript:void(0)" class="active">About</a>
+                                    <a href="javascript:void(0)" class="">About</a>
                                     <div class="dropdown-inner">
                                         <ul>
                                             <li><a href="index.html">도전의 역사</a></li>
@@ -394,17 +396,205 @@ video#background-video + img {
 
 
             </div>
+
+            <style>
+
+/* 992px 이상일 때 h1.title1의 글꼴 크기를 40px로 설정 */
+@media (min-width: 992px) {
+  h1.title1 {
+    font-size: 47px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+  }
+
+  h1.title2 {
+    font-size: 47px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+}
+
+/* 991px 이하에서 h1.title1의 글꼴 크기를 30px로 설정 */
+@media (max-width: 991px) {
+  h1.title1 {
+    font-size: 38px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+
+  h1.title2 {
+    font-size: 38px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+}
+
+/* 500px 이하에서 h1.title1의 글꼴 크기를 20px로 설정 */
+@media (max-width: 525px) {
+  h1.title1 {
+    font-size: 32px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+
+  h1.title2 {
+    font-size: 32px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+}
+/* 450px 이하에서 h1.title1의 글꼴 크기를 20px로 설정 */
+@media (max-width: 450px) {
+  h1.title1 {
+    font-size: 28px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+
+  h1.title2 {
+    font-size: 28px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans KR', sans-serif;font-weight : 800;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 992px 이상일 때 h1.title1의 글꼴 크기를 40px로 설정 */
+@media (min-width: 992px) {
+  h1.title1x {
+    font-size: 25px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    color: #ff00008f;
+
+  }
+
+  h1.title2x {
+    font-size: 25px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    color: #b8b8b88f;
+
+  }
+}
+
+/* 991px 이하에서 h1.title1의 글꼴 크기를 30px로 설정 */
+@media (max-width: 991px) {
+  h1.title1x {
+    font-size: 18px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+
+  h1.title2x {
+    font-size: 18px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+}
+
+/* 500px 이하에서 h1.title1의 글꼴 크기를 20px로 설정 */
+@media (max-width: 525px) {
+  h1.title1x {
+    font-size: 14px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+
+  h1.title2x {
+    font-size: 14px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+}
+
+/* 450px 이하에서 h1.title1의 글꼴 크기를 20px로 설정 */
+@media (max-width: 450px) {
+  h1.title1x {
+    font-size: 12px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+
+  h1.title2x {
+    font-size: 12px;
+    padding-top: 8px;
+    text-align: left; /* 왼쪽 정렬 */
+    overflow-wrap: break-word;
+    color: #ffffffbd;
+
+  }
+}
+
+            </style>
              <div class="container">
                 <div class="row text-center justify-content-center">
-                    <div data-aos="fade-up" class="col-12 col-lg-12">
+                    <div data-aos="fade-up" class="col-12 col-lg-14">
                         <div class="sectiontitle-element--light">
 
 
-                            <!--<img src="assets/img/earthW.jpeg" style="height: 90px;">-->
 
-                            <h1 class="big">We are Birders who placing seeds</h1>
-                            <p>BirdAI for humanity, for a better world.</p>
-                            <a href="#html" class="btn--big--round--colorthree">Birzont</a>
+
+                            <!--<img src="assets/img/earthW.jpeg" style="height: 90px;">-->
+                            <h1 class="title1">더 밝은</h1>
+                            <h1 class="title1">내일을 위해서는</h1>
+                            <h1 class="title1">지속가능한 행성이 필요하며,</h1>
+
+
+                            <h1 class="title2">우리는 변화의 씨앗을</h1>
+                            <h1 class="title2">뿌리고 있음을 믿는다.</h1>
+
+                            </br>
+                            <h1 class="title1x" style="color: #eeeeeed4;">For a brighter future, sustainable planets are needed,</h1>
+                            <h1 class="title2x" style="color: #eeeeeed4;">and we believe that we are sowing the seeds of change.</h1>
+
+                        </br></br></br></br>
+                            <!--<a href="#html" class="btn--big--round--colorthree">Birzont</a>-->
 
                             <!--<a href="#" class="btn--big--round--border--light">purchase</a>-->
                         </div>
@@ -540,7 +730,7 @@ window.addEventListener('load', resizeVideo);
                                         <div class="sectiontitle-element--inline align-items-md-end">
                                             <div class="wrapper">
                                                 <span class="toptitle">Birzont News</span>
-                                                <h2 style="word-break: keep-all;">버전트의 프로젝트와 기술들</h2>
+                                                <h2 style="word-break: keep-all;font-family: 'Noto Sans KR', sans-serif;font-weight : 600;">버전트의 프로젝트와 기술들</h2>
                                             </div>
                                             <!--  Portfolio Nav  -->
                                             <div class="wrapper portfolio-wrap">
@@ -750,7 +940,7 @@ window.addEventListener('load', resizeVideo);
                             </br></br>
                             <span class="toptitle" style="font-size: 18px; color: rgb(157, 157, 157);">Birder Mission</span>
                             </br>
-                            <h2o class="textsizexx" style="word-break: keep-all;">지구와 사람 중심의 기술을 창조합니다. </br></br>그것이 필요하다고 느껴지기 때문이며, 인간은 늘 모험과 탐구심으로 살아왔기 때문입니다. 그리고, 우리는 작은 변화를 실천해보려 합니다. 우린 새들이니까요.</h2o>
+                            <h2o class="textsizexx" style="word-break: keep-all;    font-family: 'Noto Sans KR', sans-serif;font-weight : 650;">지구와 사람 중심의 기술을 창조합니다. </br></br>그것이 필요하다고 느껴지기 때문이며, 인간은 늘 모험과 탐구심으로 살아왔기 때문입니다. 그리고, 우리는 작은 변화를 실천해보려 합니다. 우린 새들이니까요.</h2o>
 
                              
                              <!---- <a href="#" class="btn--big--round">See more</a>-->
@@ -795,7 +985,7 @@ window.addEventListener('load', resizeVideo);
                 <div data-aos="fade-up" class="row" data-padding="xstop">
                     <div class="col-12">
                         <div class="sectiontitle-element--center"> 
-                            <h2 class="textsizexxbird" style="word-break: keep-all;">버더들은 오늘도 </br>미래를 향해 나아가고 있습니다.</h2>
+                            <h2 class="textsizexxbird" style="word-break: keep-all;font-family: 'Noto Sans KR', sans-serif;font-weight : 650;">버더들은 오늘도 </br>미래를 향해 나아가고 있습니다.</h2>
                         </div> 
                     </div>
                 </div>
@@ -896,7 +1086,7 @@ window.addEventListener('load', resizeVideo);
                     <div class="col-12">
                         <div class="sectiontitle-element--center">
  
-                            <h2  class="textsizexxbird">버전트에 대해 더 알아보세요</h2>
+                            <h2  class="textsizexxbird" style="font-family: 'Noto Sans KR', sans-serif;font-weight : 650;">버전트에 대해 더 알아보세요</h2>
                             <a href="#" class="btn--big--round">See more</a>
                         </div>
                     </div>
@@ -985,7 +1175,7 @@ window.addEventListener('load', resizeVideo);
                             <div class="sectiontitle-element--inline align-items-md-end">
                                 <div class="wrapper">
                                     <span class="toptitle">Our blog</span>
-                                    <h2 style="word-break: keep-all;">버전트 팀의 소식을 만나보세요</h2>
+                                    <h2 style="word-break: keep-all;font-family: 'Noto Sans KR', sans-serif;font-weight : 600;">버전트 팀의 소식을 만나보세요</h2>
                                 </div>
                                 <div class="wrapper">
                                     <a href="https://khu-code.tistory.com" class="btn--big--round">팀블로그</a>
@@ -1121,8 +1311,7 @@ window.addEventListener('load', resizeVideo);
                             <div class="col-6 col-md-6">
                                 <div class="info-footer">
                                     <h6>Contact</h6>
-                                    <p>서울시 동대문구 회기동,<br> 경희대학교 경영대학 257<br> @Birzont
-                                        <br> DAT</p>
+                                    <p>판교 테크노밸리,<br> 경기스타트업파크  257<br> @Birzont
                                     <div class="social-element--small">
                                         <ul>
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
