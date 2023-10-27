@@ -781,6 +781,11 @@ html {
         flex: 0 0 100%;
         max-width: 100%
     }
+    .col-lg-14 {
+        -ms-flex: 0 0 160%;
+        flex: 0 0 160%;
+        max-width: 160%
+    }
     .order-lg-first {
         -ms-flex-order: -1;
         order: -1
